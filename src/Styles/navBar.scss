@@ -1,0 +1,94 @@
+@import "../globalStyles.scss";
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  .logoSec {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    & img {
+      height: 5vh;
+      width: auto;
+    }
+
+    & span {
+      color: #fff;
+      font-family: $Main-font;
+      font-weight: $Font-Medium;
+      font-size: $Text-Medium;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+    font-family: $Text-font;
+    & ul {
+      list-style: none;
+      & li {
+        & a {
+          text-decoration: none;
+          color: #fff;
+          font-size: $Text-Small;
+          text-transform: uppercase;
+          font-weight: $Font-Regular;
+          letter-spacing: 0.05rem;
+          transition: 0.4s;
+
+          &:hover {
+            color: rgb(255, 54, 121);
+          }
+        }
+      }
+    }
+  }
+
+  & .ButtonSec {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    & .login_button {
+      outline: none;
+      border: none;
+      background: transparent;
+      text-decoration: none;
+      color: #fff;
+      font-family: $Text-font;
+      font-size: $Text;
+      font-weight: $Font-Regular;
+      letter-spacing: 1px;
+      transition: 0.4s;
+
+      &:hover {
+        color: rgb(255, 0, 98);
+        cursor: pointer;
+      }
+    }
+    & .Shadow {
+      filter: blur(30px);
+      opacity: 0.8;
+    }
+
+    & .NavBtn_Signup {
+      font-size: $Text-Small;
+      transition: 0.4s;
+
+      &:hover {
+        box-shadow: none;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+    }
+  }
+}

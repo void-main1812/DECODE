@@ -1,0 +1,266 @@
+@import "../globalStyles.scss";
+
+.topNav {
+  height: 6vh;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+
+  & .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5vh;
+    margin: 2vh;
+    font-family: $Secondary-font;
+    text-transform: uppercase;
+    font-size: $Text-Small;
+    position: absolute;
+    letter-spacing: 0.2vw;
+    transition: 0.2s ease-in-out;
+    right: 20vh;
+    &:hover {
+      color: rgb(255, 0, 119);
+    }
+  }
+
+  & .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5vh;
+    margin: 2vh;
+    font-family: $Secondary-font;
+    text-transform: uppercase;
+    font-size: $Text-Extra-Small;
+    position: absolute;
+    letter-spacing: 0.2vw;
+    transition: 0.2s ease-in-out;
+    right: 1vh;
+    &:hover {
+      color: rgb(255, 0, 119);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 3vh;
+    }
+
+    & i {
+      font-size: 2.5vh;
+      transition: 0.2s;
+    }
+  }
+}
+
+.blobs {
+  & .blob3 {
+    top: -15vh;
+    left: -10vw;
+    filter: blur(30vh);
+    opacity: 0.5;
+  }
+
+  & .blob4 {
+    bottom: -15vh;
+    right: -10vw;
+    filter: blur(30vh);
+    opacity: 0.5;
+  }
+}
+
+.headingSec {
+  margin-top: 3vh;
+  color: #fff;
+  font-family: $Text-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  & h1 {
+    font-size: $Secondary-Heading;
+    font-weight: $Font-Light;
+    letter-spacing: 2vh;
+  }
+
+  & span {
+    font-size: $Text-Medium;
+    margin-top: 2vh;
+    opacity: 0.5;
+    letter-spacing: 0.2;
+  }
+}
+
+.inputSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+
+  & .manual,
+  & .automatic {
+    padding: 3vw;
+    width: 30%;
+  }
+
+  & .manual {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+
+    & .password {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: $Text-Small;
+      font-family: $Secondary-font;
+      letter-spacing: 0.2vw;
+      position: absolute;
+      margin-top: 38vh;
+      margin-left: -14vw;
+      &:hover {
+        cursor: pointer;
+      }
+
+      & i {
+        margin-right: 1.5vw;
+        font-size: 3vh;
+      }
+    }
+
+    & input {
+      width: 26.5vw;
+      display: flex;
+      height: 4vh;
+      background-color: rgba(255, 255, 255, 0.1);
+      outline: none;
+      border: none;
+      color: #fff;
+      font-family: $Secondary-font;
+      font-size: $Text-Small;
+      padding: 2vh;
+      box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.3);
+      letter-spacing: 0.2vw;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    & .Login {
+      font-family: $Secondary-font;
+      letter-spacing: 0.2vw;
+      transition: 0.4s ease-in-out;
+      font-size: $Text-Small;
+
+      &:hover {
+        border-radius: 5vh;
+        cursor: pointer;
+      }
+    }
+
+    & .loginShadow {
+      filter: blur(5vh);
+      opacity: 0.5;
+    }
+  }
+
+  & .line {
+    width: 0.05vw;
+    height: 35vh;
+    background-color: #fff;
+  }
+
+  & .automatic {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+      display: flex;
+      width: 26.5vw;
+      margin-left: -1vw;
+      justify-content: left;
+      align-items: center;
+      color: #fff;
+      font-family: $Text-font;
+      height: 8vh;
+      text-transform: uppercase;
+      letter-spacing: 0.1vw;
+      font-size: $Text;
+      box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: none;
+      }
+
+      & img {
+        height: 6vh;
+        margin-left: 1vw;
+        width: auto;
+        object-fit:contain;
+      }
+
+      & span {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    & .google {
+      background-color: #fff;
+      color: rgb(39, 39, 39);
+    }
+
+    & .github {
+      background-color: #1b1f23;
+    }
+
+    & .discord {
+      background-color: #5765f2;
+    }
+  }
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3vh;
+  color: #fff;
+  align-items: center;
+  font-family: $Secondary-font;
+  text-transform: uppercase;
+  gap: 3vh;
+  letter-spacing: 0.2vw;
+
+  & h2 {
+    font-weight: $Font-Light;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: $Text-Small;
+  }
+
+  & span {
+    font-size: $Text-Extra-Small;
+
+    & i {
+      font-size: 2vh;
+      margin-right: 0.5vw;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

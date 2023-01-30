@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;800;900&family=Unbounded:wght@200;300;400;500;600;800;900&display=swap");
+
+// Fonts and Typography
+$Main-font: "Unbounded", cursive;
+$Secondary-font: "Orbitron", sans-serif;
+$Text-font: "Barlow", sans-serif;
+$Main-Heading: 12vh;
+$Secondary-Heading: 8vh;
+$Heading: 5vh;
+$Text-Medium:3.5vh;
+$Text: 2.75vh;
+$Text-Small: 2vh;
+$Text-Extra-Small: 1.5vh;
+$Font-Extra-Light: 100;
+$Font-Light: 300;
+$Font-Medium: 400;
+$Font-Regular: 600;
+$Font-Bold: 800;
+$Font-Extra-Bold: 900;
+
+
+// Styling of Reusable Components
+// 1.Buttons
+.MainBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button{
+        background: linear-gradient(135deg, #FF00E5, #0085FF);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: $Text-font;
+        font-weight: $Font-Regular;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .shadow{
+        background: linear-gradient(135deg, #FF00E5, #0085FF);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.Blob{
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgb(255, 0, 140), rgb(0, 140, 255));
+    position: absolute;
+    z-index: -1;
+}

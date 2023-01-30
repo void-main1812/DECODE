@@ -1,0 +1,144 @@
+@import "../globalStyles.scss";
+
+*{
+    overflow: hidden;
+}
+
+.blob1{
+    top: -50vh;
+    left: -20vw;
+    filter: blur(30vh);
+}
+
+.blob2{
+    bottom: -50vh;
+    right: -20vw;
+    filter: blur(30vh);
+}
+
+.lendingPage{
+    padding-right:4vw;
+    padding-left: 4vw;
+    display: flex;
+    .textSec{
+        display: flex;
+        gap: 5vh;
+        flex-direction: column;
+        align-items: left;
+
+        & .Heading{
+            margin-top: 15vh;
+            display: flex;
+            flex-direction: column;
+
+            & span{
+                color: #fff;
+                font-family: $Main-font;
+                font-weight: $Font-Extra-Bold;
+                letter-spacing: 5px;
+            }
+
+            & .TitleSmall{
+                font-size: $Heading;
+            }
+
+            & .Title{
+                font-size: $Main-Heading;
+            }
+        }
+
+        & p{
+            width: 35vw;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 2px;
+            font-family: $Text-font;
+            font-size: $Text;
+            text-align: left;
+        }
+
+        & .buttonSec{
+            display: flex;
+            align-items: left;
+
+            & .signUp_btn{
+                font-size: $Text;
+                letter-spacing: 0.25vw;
+                transition: 0.5s;
+
+                &:hover{
+                    border-radius: 5vh;
+                    cursor: pointer;
+                }
+            }
+
+            & .shadow{
+                opacity: 0.5;
+                filter: blur(5vh);
+            }
+        }
+
+        & .tagline{
+            color: #fff;
+            font-family: $Secondary-font;
+            letter-spacing: 0.5vw;
+            font-size: $Text-Small;
+            position: absolute;
+            bottom: 3vh;
+            text-transform: uppercase;
+        }
+    }
+
+    & .imgSec{
+        margin-left: 5vw;
+
+        & .html,
+        & .website,
+        & .json,
+        & .mobile{
+            position: absolute;
+            border-radius: 2vh;
+            transition: 0.4s;
+        }
+
+        & .html{
+            height: 30vh;
+            margin-left: 5vw;
+            &:hover{
+                height: 32vh;
+                z-index: 10;
+            }
+        }
+
+        & .website{
+            height: 30vh;
+            margin-left: 30vw;
+            margin-top: 16vh;
+            &:hover{
+                height: 32vh;
+                z-index: 10;
+            }
+        }
+
+        & .json{
+            height: 60vh;
+            margin-left: 25vw;
+            margin-top: 48vh;
+            &:hover{
+                height: 62vh;
+                z-index: 10;
+                margin-top: 45vh;
+            }
+        }
+
+        & .mobile{
+            height: 80vh;
+            margin-left: 5vw;
+            margin-top: 35vh;
+            &:hover{
+                height: 82vh;
+                z-index: 10;
+                margin-top: 30vh;
+            }
+        }
+    }
+}

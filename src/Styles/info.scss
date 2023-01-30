@@ -1,0 +1,150 @@
+@import "../globalStyles.scss";
+
+
+.blob5 {
+  bottom: -30vh;
+  left: 30vw;
+  filter: blur(35vh);
+  opacity: 0.8;
+}
+
+.heading {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin: 3vh;
+
+  & h2 {
+    font-family: $Text-font;
+    text-transform: uppercase;
+    font-size: calc($Heading + 1vh);
+    font-weight: $Font-Medium;
+    letter-spacing: 0.1vw;
+  }
+
+  & span {
+    font-family: $Secondary-font;
+    opacity: 0.5;
+    font-size: $Text-Small;
+    letter-spacing: 0.15vw;
+  }
+}
+
+.buttonCancel {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: $Secondary-font;
+  font-size: $Text;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1vh;
+  transition: 0.2s;
+
+  &:hover {
+    color: #ff00e5;
+    cursor: pointer;
+  }
+}
+
+.infoSec {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: $Secondary-font;
+  justify-content: center;
+  align-items: center;
+  font-size: $Text;
+  text-align: left;
+  padding: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+  letter-spacing: 0.5vw;
+  line-height: 8vh;
+
+  .loginBtn{
+        text-transform: uppercase;
+        font-size: $Text-Small;
+        display: inline;
+        letter-spacing: 0.1vw;
+        transition: 0.2s;
+        margin-top: 1vh;
+        font-weight: $Font-Medium;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+        &:hover{
+            color: #ff0055;
+            cursor: pointer;
+        }
+    }
+
+  & input {
+    background: transparent;
+    border: none;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-size: calc($Text - 1vh);
+    text-align: center;
+    font-family: $Secondary-font;
+    transition: 0.5s;
+
+    &::placeholder{
+      opacity: 0.5;
+    }
+
+    &:focus{
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  & textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: $Secondary-font;
+    box-shadow: 0 4vh 8vh rgba(0, 0, 0, 0.25);
+    font-size: $Text-Small;
+    letter-spacing: 0.2vw;
+    padding: 1vw;
+    margin-top: 3vh;
+    width: 100%;
+    color: #fff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.buttonSecInfo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-family: $Secondary-font;
+
+    & .shadow{
+        filter: blur(5vh);
+        opacity: 0.5;
+    }
+
+    & .continue{
+        font-family: $Secondary-font;
+        transition: 0.2s;
+
+        &:hover{
+            border-radius: 5vh;
+        }
+    }
+}
