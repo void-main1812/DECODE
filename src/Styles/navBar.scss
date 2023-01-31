@@ -83,6 +83,7 @@
     & .NavBtn_Signup {
       font-size: $Text-Small;
       transition: 0.4s;
+      font-family: $Text-font;
 
       &:hover {
         box-shadow: none;

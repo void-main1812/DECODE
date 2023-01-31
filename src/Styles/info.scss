@@ -1,6 +1,6 @@
 @import "../globalStyles.scss";
 
-
+// For Personal Info Page
 .blob5 {
   bottom: -30vh;
   left: 30vw;
@@ -65,22 +65,22 @@
   letter-spacing: 0.5vw;
   line-height: 8vh;
 
-  .loginBtn{
-        text-transform: uppercase;
-        font-size: $Text-Small;
-        display: inline;
-        letter-spacing: 0.1vw;
-        transition: 0.2s;
-        margin-top: 1vh;
-        font-weight: $Font-Medium;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
+  .loginBtn {
+    text-transform: uppercase;
+    font-size: $Text-Small;
+    display: inline;
+    letter-spacing: 0.1vw;
+    transition: 0.2s;
+    margin-top: 1vh;
+    font-weight: $Font-Medium;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 
-        &:hover{
-            color: #ff0055;
-            cursor: pointer;
-        }
+    &:hover {
+      color: #ff0055;
+      cursor: pointer;
     }
+  }
 
   & input {
     background: transparent;
@@ -95,11 +95,11 @@
     font-family: $Secondary-font;
     transition: 0.5s;
 
-    &::placeholder{
+    &::placeholder {
       opacity: 0.5;
     }
 
-    &:focus{
+    &:focus {
       border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     }
   }
@@ -124,27 +124,113 @@
   }
 }
 
-.buttonSecInfo{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 2vw;
-    margin-left: 2vw;
-    margin-top: 1vw;
-    font-family: $Secondary-font;
+.buttonSecInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 1vw;
 
-    & .shadow{
-        filter: blur(5vh);
-        opacity: 0.5;
+  & .shadow {
+    filter: blur(5vh);
+    opacity: 0.5;
+  }
+
+  & .continue {
+    transition: 0.2s;
+
+    &:hover {
+      border-radius: 5vh;
     }
+  }
+}
 
-    & .continue{
+// For Registeration Page
+
+.regSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: $Secondary-font;
+
+  & .blob6 {
+    position: absolute;
+    top: -40vh;
+    transform: rotate(-45deg);
+    filter: blur(30vh);
+  }
+
+  & h1 {
+    font-size: $Main-Heading;
+    font-weight: $Font-Light;
+    font-family: $Text-font;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+  }
+
+  & .description {
+    font-size: $Text;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5vh;
+  }
+
+  & .regInput {
+    margin-top: 4vh;
+    & .textSec {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5vh;
+      padding: 4vh;
+
+      & input {
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2vh;
+        width: 25vw;
+        color: #fff;
+        box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.225);
         font-family: $Secondary-font;
-        transition: 0.2s;
+        letter-spacing: 0.2vw;
+        font-size: $Text-Small;
 
-        &:hover{
-            border-radius: 5vh;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
         }
+      }
     }
+  }
+
+  & .buttonSec {
+    margin-top: 5vh;
+
+    & .shadow {
+      filter: blur(4vh);
+      opacity: 0.5;
+    }
+
+    & .continue {
+      font-family: $Secondary-font;
+      transition: 0.4s;
+
+      &:hover {
+        border-radius: 4vh;
+      }
+    }
+  }
+}
+
+.autoReg {
+  display: flex;
+  gap: 5vw;
+  margin-top: 8vh;
+  & img {
+    height: 6vh;
+    width: auto;
+  }
 }

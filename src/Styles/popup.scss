@@ -1,0 +1,59 @@
+@import "../globalStyles.scss";
+
+.popup {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(1vh);
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+  & .popup-inner {
+    background-color: #1d0f1e;
+    display: flex;
+    justify-content: center;
+    border-radius: 1vh;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: $Secondary-font;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+
+    & .popupBlob{
+        z-index: 1;
+        filter: blur(10vh);
+        position: absolute;
+        right: -5vh;
+        bottom: -5vh;
+    }
+
+    & .popupBlob2{
+        z-index: 1;
+        filter: blur(10vh);
+        position: absolute;
+        top: -5vh;
+        left: -5vh;
+    }
+
+    & button {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: $Text-Medium;
+      position: absolute;
+      top: 1vh;
+      right: 1vh;
+      transition: 0.2s;
+
+      &:hover{
+        cursor: pointer;
+        color: rgb(255, 0, 76);
+      }
+    }
+  }
+}
