@@ -46,7 +46,7 @@ const LoginPage = () => {
           <motion.input initial={{ x: -100, y: -100, opacity: 0 }} animate={{ x: 0, y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.2 } }} exit={{ y: 150, opacity: 0 }} transition={{ duration: 0.4 }} type="text" placeholder='USERNAME / EMAIL' />
           <motion.input initial={{ x: -100, y: -100, opacity: 0 }} animate={{ x: 0, y: 0, opacity: 1, transition: { duration: 0.6, delay: 0.2 } }} exit={{ y: 150, opacity: 0 }} transition={{ duration: 0.3 }} type={`${isVisible ? 'text' : 'password'}`} placeholder='PASSWORD' />
           <motion.div initial={{ x: -100, y: -100, opacity: 0 }} animate={{ x: 0, y: 0, opacity: 1, transition: { duration: 0.7, delay: 0.2 } }} exit={{ y: 150, opacity: 0 }} transition={{ duration: 0.2 }}>
-            <ButtonPrimary text="continue" padding="10.5vw" height="8vh" margin="5vh" width="20vw" name="Login" shadow="loginShadow" />
+            <ButtonPrimary text="continue" to="/404" padding="10.5vw" height="8vh" margin="5vh" width="20vw" name="Login" shadow="loginShadow" />
           </motion.div>
         </div>
         <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { delay: 0.5, duration: 0.5 } }} exit={{ opacity: 0 }} className="line" />

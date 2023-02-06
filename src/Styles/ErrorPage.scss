@@ -1,0 +1,65 @@
+@import "../globalStyles.scss";
+
+.Error404 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  & h1 {
+    font-family: $Secondary-font;
+    font-size: $Main-Heading;
+    font-weight: $Font-Regular;
+    letter-spacing: 1vw;
+  }
+
+  & p {
+    font-family: $Secondary-font;
+    font-size: $Text;
+    letter-spacing: 0.5vw;
+    opacity: 0.5;
+  }
+
+  & span {
+    font-family: $Text-font;
+    text-transform: uppercase;
+    font-size: $Text;
+    letter-spacing: 0.8vw;
+    color: #ff0055;
+  }
+}
+
+.backbtn {
+  position: absolute;
+  left: 1vw;
+  top: 2vh;
+  font-family: $Main-font;
+  text-transform: uppercase;
+
+  .link {
+    padding: 1vh;
+    padding-right: 2.5vh;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    background-color: #3a3a3a4d;
+
+    &:hover {
+      background-color: #3a3a3a4d;
+      color: #ff0055;
+      border-radius: 4vh;
+    }
+  }
+
+  & i {
+    font-size: 4vh;
+    margin: 0;
+    padding: 0;
+  }
+}

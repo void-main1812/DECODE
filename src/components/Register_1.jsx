@@ -61,7 +61,7 @@ export const Register = () => {
                     </div>
                 </div>
                 <motion.div initial={{y:-50, opacity:0}} animate={{y:0, opacity:1, transition:{delay:0.9, duration:0.5}}} className="buttonSec">
-                    <ButtonPrimary text="continue" height="7vh" width="12vw" margin="2vh" padding="6vw" name="continue" shadow="continueShadow" />
+                    <ButtonPrimary text="continue" to="/404" height="7vh" width="12vw" margin="2vh" padding="6vw" name="continue" shadow="continueShadow" />
                 </motion.div>
                 <div className="autoReg">
                     <motion.img initial={{x:-80, opacity:0}} animate={{x:0, opacity:1, transition:{duration:0.3}}} src={google} alt="" />
