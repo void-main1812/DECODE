@@ -10,7 +10,7 @@ import discord from "../assets/discord.png";
 
 export const Info = () => {
     return (
-        <motion.div exit={{ scale: 1.2, transition: { duration: 0.01 } }}>
+        <motion.div exit={{ scale: 1.2, opacity:0, transition: { duration: 0.01 } }}>
             <motion.div initial={{ x: 500, y: 200 }} animate={{ x: 0, y: 0, transition: { duration: 1 } }} className="Blob blob5">
                 <BlurBlobs height="80vh" width="80vh" />
             </motion.div>
@@ -54,10 +54,10 @@ export const Register = () => {
                 <motion.span initial={{x:-120, opacity:0}} animate={{x:0, opacity:1, transition:{delay:0.5, duration:0.5}}} className='description'>your are just one step away from your success</motion.span>
                 <div className="regInput">
                     <div className="textSec">
-                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.2}}} type="text" placeholder='YOUR USER NAME' title='Create a user name' />
-                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.4}}} type="text" placeholder='CREATE A PASSWORD' title='ex: 010$j*J@xy' />
-                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.6}}} type="text" placeholder='YOUR EMAIL' title='Enter your email-id' />
-                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.8}}} type="text" placeholder='CONFIRM PASSWORD' title='re-enter the password' />
+                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.2, duration:0.3}}} type="text" placeholder='YOUR USER NAME' title='Create a user name' />
+                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.4, duration:0.3}}} type="text" placeholder='YOUR EMAIL' title='ex: 010$j*J@xy' />
+                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.6, duration:0.3}}} type="text" placeholder='CREATE PASSWORD' title='Enter your email-id' />
+                        <motion.input initial={{x:-50, y:-50, opacity:0}} animate={{x:0, y:0, opacity:1, transition:{delay:0.8, duration:0.3}}} type="text" placeholder='CONFIRM PASSWORD' title='re-enter the password' />
                     </div>
                 </div>
                 <motion.div initial={{y:-50, opacity:0}} animate={{y:0, opacity:1, transition:{delay:0.9, duration:0.5}}} className="buttonSec">

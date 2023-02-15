@@ -1,0 +1,46 @@
+@import "../globalStyles.scss";
+
+.loadingSec {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .textSec {
+    & h1 {
+      color: #fff;
+      font-family: $Main-font;
+      font-size: $Main-Heading;
+
+      & span {
+        color: #ff0040;
+      }
+    }
+
+    & .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1vh;
+
+      & span {
+        color: #fff;
+        font-family: $Secondary-font;
+        text-transform: uppercase;
+        font-size: $Text;
+      }
+    }
+  }
+}
+
+.blob8 {
+  background: linear-gradient(135deg, #ff00e5, #0085ff);
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40vh);
+  opacity: 0.5;
+}
