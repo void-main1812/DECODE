@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import './globalStyles.scss';
-
+import '../public/globalStyles.scss';
+    
 export const ButtonPrimary = (props) => {
     return (
         <div className="MainBtn">

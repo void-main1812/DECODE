@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.scss'
+import '../public/App.scss'
 import AnimatedRoutes from './components/AnimatedRoutes'
 import LoadingScreen from './components/LoadingScreen';
 

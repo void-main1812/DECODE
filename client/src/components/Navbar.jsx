@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from '../assets/Logo.png'
-import '../Styles/navBar.scss'
 import NavBar from '../json/navBar.json';
 import { ButtonPrimary } from '../Reusable';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import '../../public/Styles/navBar.scss'
 
 const Navbar = () => {
     return (

@@ -2,8 +2,8 @@ import React from 'react'
 import Lottie from 'react-lottie'
 import Robot from '../json/robot.json'
 import Loading from '../json/loading.json'
-import "../Styles/loding.scss"
 import { BlurBlobs } from '../Reusable'
+import '../../public/Styles/loding.scss'
 
 const LoadingScreen = () => {
 

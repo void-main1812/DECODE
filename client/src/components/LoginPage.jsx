@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../Styles/login.scss'
 import { BlurBlobs, ButtonPrimary } from '../Reusable'
 import google from "../assets/google.webp";
 import github from "../assets/github.png";
 import discord from "../assets/discord.png";
 import { motion } from 'framer-motion';
-
+import '../../public/Styles/login.scss'
 
 
 const LoginPage = () => {

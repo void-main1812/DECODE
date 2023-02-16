@@ -1,12 +1,12 @@
 import React from 'react';
 import { BlurBlobs, ButtonPrimary } from '../Reusable';
-import '../Styles/lendingPage.scss';
 import { motion } from 'framer-motion';
 import html from '../assets/html.png';
 import json from '../assets/json.png';
 import mobile from '../assets/mobile.png';
 import website from '../assets/website.png';
 import Navbar from './Navbar';
+import '../../public/Styles/lendingPage.scss';
 
 const LendingPage = () => {
     return (

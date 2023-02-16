@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { BlurBlobs, ButtonPrimary } from '../Reusable'
 import { motion } from 'framer-motion';
-import "../Styles/info.scss";
 import { Popup1 } from './RegPopUp';
 import google from "../assets/google.webp";
 import github from "../assets/github.png";
 import discord from "../assets/discord.png";
+import '../../public/Styles/info.scss'
 
 export const Info = () => {
     return (

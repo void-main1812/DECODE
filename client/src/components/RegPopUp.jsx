@@ -1,9 +1,9 @@
 import React from 'react'
-import "../Styles/popup.scss"
 import { BlurBlobs } from '../Reusable';
 import Lottie from 'react-lottie';
 import ThumbsUp from "../assets/thumbs-up.json"
 import { motion } from 'framer-motion';
+import '../../public/Styles/popup.scss'
 
 export const Popup1 = (props) => {
 
