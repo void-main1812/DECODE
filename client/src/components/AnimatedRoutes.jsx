@@ -6,7 +6,6 @@ import {Info} from './Register_1';
 import { AnimatePresence } from 'framer-motion'
 import { Register } from './Register_1';
 import Error404 from './Error404';
-import LoadingScreen from './LoadingScreen';
 
 const AnimatedRoutes = () => {
 
@@ -19,7 +18,7 @@ const AnimatedRoutes = () => {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path='/register' element={<Info/>}/>
                 <Route path='/register_info' element={<Register />} />
-                <Route path='/404' element={<LoadingScreen />} />
+                <Route path='/404' element={<Error404 />} />
             </Routes>
         </AnimatePresence>
     )

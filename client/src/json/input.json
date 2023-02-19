@@ -1,0 +1,15 @@
+[
+  {
+    "placeHolder": "username / email-id",
+    "type": "text",
+    "animate": "animate1",
+    "className": "userName"
+  },
+
+  {
+    "placeHolder": "password",
+    "type": "visible",
+    "animate": "animate2",
+    "className": "password"
+  }
+]
