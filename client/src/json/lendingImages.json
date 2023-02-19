@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Web Development",
+    "src":"0",
+    "className":"html",
+    "duration": 1.75
+  },
+  {
+    "title": "Programming",
+    "src": "1",
+    "className": "json",
+    "duration": 1
+  },
+  {
+    "title": "App Development",
+    "src": "2",
+    "className": "mobile",
+    "duration": 2
+  },
+  {
+    "title": "Ui/Ux Design",
+    "src": "3",
+    "className": "website",
+    "duration": 1.5
+  }
+]
