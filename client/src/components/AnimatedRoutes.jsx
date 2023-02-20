@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import LoginPage from './LoginPage'
 import {Info} from './Register_1';
 import { AnimatePresence } from 'framer-motion'
-import { Register } from './Register_1';
+import Register from './Register';
 import Error404 from './Error404';
 
 const AnimatedRoutes = () => {
