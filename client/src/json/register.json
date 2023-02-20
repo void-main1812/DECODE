@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Create user Name",
+    "placeholder": "USER NAME",
+    "animate": "animate1"
+  },
+  {
+    "title": "Enter your email id",
+    "placeholder": "Email-id",
+    "animate": "animate2"
+  },
+  {
+    "title": "Create a strong password",
+    "placeholder": "Create password",
+    "animate": "animate3"
+  },
+  {
+    "title": "Confirm entered password",
+    "placeholder": "Confirm Password",
+    "animate": "animate4"
+  }
+]
