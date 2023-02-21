@@ -18,7 +18,7 @@ export const Popup1 = (props) => {
 
     return (props.trigger) ? (
         <>
-            <motion.div initial={{scale:0.5, opacity:0}} animate={{scale:1, opacity:1, transition:{duration:0.1, delay:1.5}}} className="popup">
+            <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:0.1, delay:1}}} className="popup">
                 <div className="popup-inner" style={{ height: props.height, width: props.width }}>
                     <div className="Blob popupBlob">
                         <BlurBlobs height="15vh" width="15vh" />
