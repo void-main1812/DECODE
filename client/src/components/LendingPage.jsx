@@ -55,7 +55,6 @@ const LendingPage = () => {
     return (
 
         <motion.div initial={{ height: '100vh', opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <Navbar />
             <motion.div className="blobs">
                 {/* ---------------------------------Background Blobs---------------------------------- */}
                 <motion.div variants={leftRight} initial="hidden" animate="visible" className="Blob blob1">
