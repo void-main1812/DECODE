@@ -1,17 +1,17 @@
 [
     {
         "title":"About",
-        "link":"unknown",
+        "link":"/about",
         "delay":"unknown"
     },
     {
       "title": "Questions",
-      "link": "unknown",
+      "link": "/",
       "delay": "unknown"
     },
     {
       "title": "Social",
-      "link": "unknown",
+      "link": "/",
       "delay": "unknown"
     }
 ]

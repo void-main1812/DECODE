@@ -1,0 +1,20 @@
+[
+  {
+    "Text": "login with google",
+    "image": 0,
+    "className": "google",
+    "animate": "animate1"
+  },
+  {
+    "Text": "login with github",
+    "image": 1,
+    "className": "github",
+    "animate": "animate2"
+  },
+  {
+    "Text": "login with discord",
+    "image": 2,
+    "className": "discord",
+    "animate": "animate3"
+  }
+]

@@ -7,6 +7,8 @@ import '../../public/Styles/loding.scss'
 
 const LoadingScreen = () => {
 
+    /* Adding Animations */
+
     const loadingOptions = {
         loop: true,
         autoplay: true,
