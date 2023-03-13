@@ -20,7 +20,7 @@ const Navbar = () => {
                                 return (
                                     <ul>
                                         <li>
-                                            <NavLink to={navbar.link} activeClassName="active" >{navbar.title}</NavLink>
+                                            <NavLink activeClassName='active' className='nav__link' to={navbar.link} >{navbar.title}</NavLink>
                                         </li>
                                     </ul>
                                 )

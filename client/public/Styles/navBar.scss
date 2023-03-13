@@ -35,7 +35,7 @@
     & ul {
       list-style: none;
       & li {
-        & a {
+        & .nav__link {
           text-decoration: none;
           color: #fff;
           font-size: $Text-Small;
@@ -47,6 +47,10 @@
           &:hover {
             color: rgb(255, 54, 121);
           }
+        }
+
+        & .active{
+          color: #ff0055;
         }
       }
     }
@@ -92,8 +96,4 @@
       }
     }
   }
-}
-
-.active {
-  color: #ff0055;
 }
