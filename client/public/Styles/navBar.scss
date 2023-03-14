@@ -7,10 +7,11 @@
   height: 10vh;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
-  .logoSec {
+  & .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
     & img {
       height: 5vh;
       width: auto;
@@ -29,11 +30,11 @@
   }
 
   .navLinks {
-    display: flex;
-    gap: 1rem;
     font-family: $Text-font;
     & ul {
       list-style: none;
+      display: flex;
+      gap: 1rem;
       & li {
         & .nav__link {
           text-decoration: none;
@@ -49,7 +50,7 @@
           }
         }
 
-        & .active{
+        & .active {
           color: #ff0055;
         }
       }
